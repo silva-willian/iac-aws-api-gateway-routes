@@ -138,7 +138,7 @@ func createMethodResponse(resourceID, method, statusCode, pattern string) error 
 
 		var defaultCors = map[string]*string{
 
-			"method.response.header.Access-Control-Allow-Headers": aws.String("'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,userInformation,idToken'"),
+			"method.response.header.Access-Control-Allow-Headers": aws.String("'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token,userInformation,idToken,bloqueado'"),
 			"method.response.header.Access-Control-Allow-Methods": aws.String("'GET,OPTIONS,POST,PUT,PATCH,DELETE'"),
 			"method.response.header.Access-Control-Allow-Origin":  aws.String("'*'"),
 		}
